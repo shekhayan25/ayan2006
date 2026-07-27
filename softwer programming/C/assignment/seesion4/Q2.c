@@ -1,13 +1,26 @@
-// 2 .Build a Flipkart-style discount calculator: given product price, discount percentage, and a boolean isMember, use arithmetic and logical operators to calculate the final price (apply an extra 5% off if isMember is true).
+#include <stdio.h>
+#include <string.h>
 
-#include<stdio.h>
-
-void main(){
-    float price,discount,finalprice;
-    int isMember;
+void main()
+{
+    float price, discount, finalPrice;
+    char isMember[10];
 
     printf("Enter Product Price: ");
-    scanf("%f\n",&price);
+    scanf("%f", &price);
 
-    printf("");
+    printf("Enter Discount Percentage: ");
+    scanf("%f", &discount);
+
+    printf("Are you a Member? (Yes/No): ");
+    scanf("%s", isMember);
+
+    finalPrice = price - (price * discount / 100);
+
+    if (strcmp(isMember, "Yes") == 0 || strcmp(isMember, "yes") == 0)
+    {
+        finalPrice = finalPrice - (finalPrice * 5 / 100);
+    }
+
+    printf("\nFinal Price = Rs. %.2f", finalPrice);
 }

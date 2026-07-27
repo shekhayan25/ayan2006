@@ -3,16 +3,18 @@
 
 #include <stdio.h>
 
-int calculateTotal(int itemPrice, int quantity)
-{
-    return itemPrice * quantity;
-}
+ int calculateTotal(int itemPrice, int quantity)
+ {
+     return itemPrice * quantity;
+ }
 
-void main()
-{
-    int total = calculateTotal(250, 3);
+ void main()
+ {
+     int total = calculateTotal(250, 3);
 
-    printf("Total = %d", total);
+     printf("Total = %d", total);
 
-   
-}
+    
+
+ }
+
