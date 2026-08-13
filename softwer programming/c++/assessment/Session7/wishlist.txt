@@ -1,0 +1,3 @@
+cd "d:\ayan 2006\softwer programming\c++\assessment\Session7\" ; if ($?) { g++ task5.cpp -o task5 } ; if ($?) { .\task5 } | 200
+qw | 900
+sds | 122
