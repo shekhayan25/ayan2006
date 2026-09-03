@@ -1,0 +1,7 @@
+body{
+    background-color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;   
+}
